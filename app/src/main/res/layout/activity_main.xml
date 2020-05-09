@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:onClick="rlclick"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="helloworld" />
+
+    </RelativeLayout>
+
+
+    <com.simple.thermalview.ThermalView
+        android:id="@+id/thermalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/tra"
+        android:clickable="true"
+        android:visibility="visible" />
+
+</RelativeLayout>
